@@ -1,0 +1,5 @@
+_:
+
+[
+  "kubectl-argo-rollouts"
+]
