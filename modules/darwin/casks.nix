@@ -15,4 +15,5 @@ _:
   # other gui stuff
   "keepassxc"
   "spotify"
+  "netnewswire"
 ]
