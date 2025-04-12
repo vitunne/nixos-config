@@ -2,7 +2,8 @@
 
 let
   user = "victor.suzdalev";
-in
+  user = "victor.suzdalev";
+  email = "victor.suzdalev@aliexpress.ru"; in
 {
   # imports = [
   #  ./dock
@@ -48,6 +49,19 @@ in
       };
       programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
     };
+  };
+
+  wezterm = {
+    enable = true;
+    extraConfig = ''
+      local wezterm = require 'wezterm'
+      local config = wezterm.config_builder()
+      config.color_scheme = 'AdventureTime'
+      config.font = wezterm.font 'PragmataProMono Nerd Font Mono'
+      config.font_size = 20
+
+      return config
+    '';
   };
 
   # Fully declarative dock using the latest from Nix Store

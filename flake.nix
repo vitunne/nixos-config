@@ -27,15 +27,15 @@
       url = "github:argoproj/homebrew-tap";
       flake = false;
     };
-    disko = {
-      url = "github:nix-community/disko";
+    nixos-wsl = {
+      url = "github:nix-community/nixos-wsl";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, argo-homebrew-tap, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, argo-homebrew-tap, home-manager, nixpkgs, nixos-wsl } @inputs:
     let
-      user = "victor.suzdalev";
+      user = "nixos";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
       darwinSystems = [ "aarch64-darwin" "x86_64-darwin" ];
       forAllSystems = f: nixpkgs.lib.genAttrs (linuxSystems ++ darwinSystems) f;
@@ -110,7 +110,7 @@
         inherit system;
         specialArgs = inputs;
         modules = [
-          disko.nixosModules.disko
+          nixos-wsl.nixosModules.wsl
           home-manager.nixosModules.home-manager {
             home-manager = {
               useGlobalPkgs = true;

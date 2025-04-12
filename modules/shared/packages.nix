@@ -1,10 +1,8 @@
 { pkgs }:
 
 with pkgs; [
-  wezterm
-  jq
-  kubectl
-  kubectx
-  kubernetes-helm
+  wget
+  neovim
+  git
   devenv
 ]
