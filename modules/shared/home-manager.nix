@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 
-let user = "vitune"; in
+let user = "victor.suzdalev"; in
 {
   zsh = {
     enable = true;
