@@ -5,5 +5,6 @@ with pkgs; [
   neovim
   git
   devenv
+  dnsutils
   ansible
 ]
