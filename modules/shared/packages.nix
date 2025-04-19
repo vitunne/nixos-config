@@ -5,4 +5,5 @@ with pkgs; [
   neovim
   git
   devenv
+  ansible
 ]
