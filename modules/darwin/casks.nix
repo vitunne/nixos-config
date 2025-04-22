@@ -4,7 +4,6 @@ _:
   # Development Tools
   "homebrew/cask/docker"
   "visual-studio-code"
-  # "argoproj/tap/kubectl-argo-rollouts"
 
   # Communication Tools
   "telegram"
@@ -16,4 +15,5 @@ _:
   "keepassxc"
   "spotify"
   "netnewswire"
+  "obsidian"
 ]
