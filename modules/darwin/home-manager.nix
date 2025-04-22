@@ -2,7 +2,6 @@
 
 let
   user = "victor.suzdalev";
-  user = "victor.suzdalev";
   email = "victor.suzdalev@aliexpress.ru"; in
 {
   # imports = [
