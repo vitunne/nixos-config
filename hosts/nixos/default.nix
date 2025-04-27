@@ -1,50 +1,9 @@
-# { config, lib, pkgs, ... }:
-
-# {
-#   imports = [
-#     # ../../modules/nixos/home-manager.nix
-#     # ../../modules/shared
-#   ];
-
-#   wsl.enable = true;
-#   wsl.defaultUser = "nixos";
-
-#   # This value determines the NixOS release from which the default
-#   # settings for stateful data, like file locations and database versions
-#   # on your system were taken. It's perfectly fine and recommended to leave
-#   # this value at the release version of the first install of this system.
-#   # Before changing this value read the documentation for this option
-#   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-#   system.stateVersion = "24.11"; # Did you read the comment?
-
-#   nix.extraOptions = ''
-#     experimental-features = nix-command flakes
-#   '';
-
-#   programs.nix-ld = {
-#     enable = true;
-#   };
-
-#   environment.systemPackages = with pkgs; [
-#     neovim
-#   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
-
-#   # users.users.vitune = {
-#   #   isNormalUser = true;
-#   #   group = "vitune";
-#   #   extraGroups = [ "wheel" ]; # Enable sudo for the user
-#   # };
-
-#   # users.groups.vitune = {};
-# }
-
 { config, inputs, lib, pkgs, agenix, ... }:
 
 let user = "nixos";
     keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC9GrdiCkoU8UiGgLU6M6/VFRSpPnGHdBrtK0O9MhnmH" ]; in
 {
   imports = [
-    ../../modules/nixos/home-manager.nix
     ../../modules/shared
   ];
 
@@ -79,14 +38,13 @@ let user = "nixos";
     neovim
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
-  # Sync state between machines
   # Add docker daemon
-  # virtualisation = {
-  #   docker = {
-  #     enable = true;
-  #     logDriver = "json-file";
-  #   };
-  # };
+  virtualisation = {
+    docker = {
+      enable = true;
+      logDriver = "json-file";
+    };
+  };
 
   # It's me, it's you, it's everyone
   users.users = {
