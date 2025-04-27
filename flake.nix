@@ -111,13 +111,14 @@
         specialArgs = inputs;
         modules = [
           nixos-wsl.nixosModules.wsl
-          home-manager.nixosModules.home-manager {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.${user} = import ./modules/nixos/home-manager.nix;
-            };
-          }
+          home-manager.nixosModules.home-manager 
+          # {
+          #   home-manager = {
+          #     useGlobalPkgs = true;
+          #     useUserPackages = true;
+          #     users.${user} = import ./modules/nixos/home-manager.nix;
+          #   };
+          # }
           ./hosts/nixos
         ];
      });

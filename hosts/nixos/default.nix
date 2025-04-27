@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    # ../../modules/nixos/home-manager.nix
+    # ../../modules/shared
+  ];
+
   wsl.enable = true;
   wsl.defaultUser = "nixos";
 
@@ -19,6 +24,10 @@
   programs.nix-ld = {
     enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    neovim
+  ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   # users.users.vitune = {
   #   isNormalUser = true;
