@@ -47,21 +47,21 @@ let
         enableNixpkgsReleaseCheck = false;
         stateVersion = "24.11";
       };
-      programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
+      programs = {
+        wezterm = {
+          enable = true;
+          extraConfig = ''
+            local wezterm = require 'wezterm'
+            local config = wezterm.config_builder()
+            config.color_scheme = 'AdventureTime'
+            config.font = wezterm.font 'PragmataProMono Nerd Font Mono'
+            config.font_size = 20
+
+            return config
+          '';
+        };
+      } // import ../shared/home-manager.nix { inherit config pkgs lib; };
     };
-  };
-
-  wezterm = {
-    enable = true;
-    extraConfig = ''
-      local wezterm = require 'wezterm'
-      local config = wezterm.config_builder()
-      config.color_scheme = 'AdventureTime'
-      config.font = wezterm.font 'PragmataProMono Nerd Font Mono'
-      config.font_size = 20
-
-      return config
-    '';
   };
 
   # Fully declarative dock using the latest from Nix Store

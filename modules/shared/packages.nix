@@ -6,6 +6,5 @@ with pkgs; [
   git
   devenv
   dnsutils
-  ansible
   sshpass
 ]
