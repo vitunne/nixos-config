@@ -9,6 +9,8 @@ let
   # ];
 
   # It me
+  system.primaryUser = "${user}";
+
   users.users.${user} = {
     name = "${user}";
     home = "/Users/${user}";
