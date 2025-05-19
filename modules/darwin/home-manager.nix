@@ -44,6 +44,7 @@ let
     useGlobalPkgs = true;
     users.${user} = { pkgs, config, lib, ... }:{
       home = {
+        packages = pkgs.callPackage ./packages.nix {};
         enableNixpkgsReleaseCheck = false;
         stateVersion = "24.11";
       };
