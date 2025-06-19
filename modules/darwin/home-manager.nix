@@ -49,6 +49,9 @@ let
         packages = pkgs.callPackage ./packages.nix {};
         enableNixpkgsReleaseCheck = false;
         stateVersion = "24.11";
+        sessionPath = [
+          "/Users/${user}/vk-cloud-solutions/bin"
+        ];
       };
       programs = {
         wezterm = {
