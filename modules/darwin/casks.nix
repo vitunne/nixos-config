@@ -4,6 +4,7 @@ _:
   # Development Tools
   "homebrew/cask/docker"
   "visual-studio-code"
+  "cursor"
 
   # Communication Tools
   "telegram"
