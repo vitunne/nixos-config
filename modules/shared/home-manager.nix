@@ -28,6 +28,11 @@ let user = "victor.suzdalev"; in
     ];
   };
 
+  fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+  
   direnv = {
     enable = true;
   };
