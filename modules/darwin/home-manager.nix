@@ -54,17 +54,13 @@ let
         ];
       };
       programs = {
-        wezterm = {
+        kitty = {
           enable = true;
-          extraConfig = ''
-            local wezterm = require 'wezterm'
-            local config = wezterm.config_builder()
-            config.color_scheme = 'AdventureTime'
-            config.font = wezterm.font 'PragmataProMono Nerd Font Mono'
-            config.font_size = 20
-
-            return config
-          '';
+          font = {
+            name = "PragmataProMono Nerd Font Mono";
+            size = 20;
+          };
+          themeFile = "AdventureTime";
         };
       } // import ../shared/home-manager.nix { inherit config pkgs lib; };
     };
