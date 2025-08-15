@@ -8,4 +8,5 @@ shared-packages ++ [
   kubectl
   kubectx
   kubernetes-helm
+  dive
 ]

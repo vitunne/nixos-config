@@ -15,6 +15,7 @@ _:
   # other gui stuff
   "keepassxc"
   "spotify"
-  "netnewswire"
   "obsidian"
+  "raycast"
+  "clash-verge-rev"
 ]

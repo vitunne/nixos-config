@@ -11,6 +11,7 @@ let user = "victor.suzdalev"; in
       v = "nvim";
       k = "kubectl";
       h = "helm";
+      ssh="TERM=xterm-256color ssh";
     };
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
