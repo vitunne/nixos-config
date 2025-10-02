@@ -22,8 +22,9 @@ let
     enable = true;
     brews = pkgs.callPackage ./brews.nix {};
     casks = pkgs.callPackage ./casks.nix {};
-    onActivation.autoUpdate = true;
-    onActivation.upgrade = true;
+    greedyCasks = true;
+    onActivation.autoUpdate = false;
+    onActivation.upgrade = false;
 
     # These app IDs are from using the mas CLI app
     # mas = mac app store

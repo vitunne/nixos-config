@@ -2,7 +2,7 @@ _:
 
 [
   # Development Tools
-  "homebrew/cask/docker"
+  "homebrew/cask/docker-desktop"
   "visual-studio-code"
   "beekeeper-studio"
 
