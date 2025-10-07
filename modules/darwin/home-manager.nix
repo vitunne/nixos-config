@@ -59,7 +59,7 @@ let
           enable = true;
           font = {
             name = "PragmataProMono Nerd Font Mono";
-            size = 20;
+            size = 24;
           };
           themeFile = "AdventureTime";
         };
