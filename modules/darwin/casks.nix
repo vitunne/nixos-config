@@ -17,5 +17,4 @@ _:
   "spotify"
   "obsidian"
   "raycast"
-  "clash-verge-rev"
 ]
