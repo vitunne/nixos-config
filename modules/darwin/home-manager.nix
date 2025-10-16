@@ -87,7 +87,7 @@ let
       { path = "/System/Applications/Calendar.app"; }
       { path = "/System/Applications/System Settings.app"; }
       {
-        path = "${config.users.users.${user}.home}/.local/share/downloads";
+        path = "${config.users.users.${user}.home}/Downloads";
         section = "others";
         options = "--sort name --view grid --display stack";
       }
