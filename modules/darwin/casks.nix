@@ -4,6 +4,7 @@ _:
   # Development Tools
   "homebrew/cask/docker-desktop"
   "visual-studio-code"
+  "cursor"
   "beekeeper-studio"
 
   # Communication Tools
