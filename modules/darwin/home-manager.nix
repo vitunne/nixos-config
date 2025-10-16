@@ -51,18 +51,22 @@ let
         packages = pkgs.callPackage ./packages.nix {};
         enableNixpkgsReleaseCheck = false;
         stateVersion = "24.11";
-        sessionPath = [
-          "/Users/${user}/vk-cloud-solutions/bin"
-        ];
+        # sessionPath = [
+        #   "/Users/${user}/vk-cloud-solutions/bin"
+        # ];
       };
       programs = {
-        kitty = {
+        wezterm = {
           enable = true;
-          font = {
-            name = "PragmataProMono Nerd Font Mono";
-            size = 24;
-          };
-          themeFile = "AdventureTime";
+          extraConfig = ''
+            local wezterm = require 'wezterm'
+            local config = wezterm.config_builder()
+            config.color_scheme = 'AdventureTime'
+            config.font = wezterm.font 'PragmataProMono Nerd Font Mono'
+            config.font_size = 20
+
+            return config
+          '';
         };
       } // import ../shared/home-manager.nix { inherit config pkgs lib; };
     };
@@ -74,9 +78,9 @@ let
     username = user;
     entries = [
       { path = "/Applications/Google Chrome.app"; }
+      { path = "${pkgs.wezterm}/Applications/WezTerm.app"; }
       { path = "/Applications/Visual Studio Code.app"; }
       { path = "/Applications/Cursor.app"; }
-      { path = "${pkgs.kitty}/Applications/kitty.app"; }
       { path = "/Applications/Mattermost.app"; }
       { path = "/Applications/Telegram.app"; }
       { path = "/Applications/Spotify.app"; }
