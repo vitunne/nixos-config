@@ -9,4 +9,5 @@ shared-packages ++ [
   kubectx
   kubernetes-helm
   dive
+  minio-client
 ]
