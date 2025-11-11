@@ -6,6 +6,7 @@ _:
   "visual-studio-code"
   "cursor"
   "beekeeper-studio"
+  "insomnia"
 
   # Communication Tools
   "telegram"
