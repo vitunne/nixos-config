@@ -19,4 +19,5 @@ _:
   "spotify"
   "obsidian"
   "raycast"
+  "libreoffice"
 ]

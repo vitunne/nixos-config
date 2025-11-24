@@ -40,6 +40,7 @@ let
       "AmneziaWG" = 6478942365;
       "Magnet" = 441258766;
       "Mattermost Desktop" = 1614666244;
+      "v2RayTun" = 6476628951;
     };
   };
 
