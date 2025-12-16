@@ -78,7 +78,7 @@ let
     enable   = true;
     username = user;
     entries = [
-      { path = "/Applications/Google Chrome.app"; }
+      { path = "/Applications/Firefox.app"; }
       { path = "${pkgs.wezterm}/Applications/WezTerm.app"; }
       { path = "/Applications/Visual Studio Code.app"; }
       { path = "/Applications/Cursor.app"; }
