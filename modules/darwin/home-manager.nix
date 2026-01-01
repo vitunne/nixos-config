@@ -52,9 +52,10 @@ let
         packages = pkgs.callPackage ./packages.nix {};
         enableNixpkgsReleaseCheck = false;
         stateVersion = "24.11";
-        # sessionPath = [
-        #   "/Users/${user}/vk-cloud-solutions/bin"
-        # ];
+        sessionPath = [
+          "/opt/homebrew/bin"
+          "/opt/homebrew/sbin"
+        ];
       };
       programs = {
         wezterm = {
@@ -83,6 +84,7 @@ let
       { path = "/Applications/Visual Studio Code.app"; }
       { path = "/Applications/Cursor.app"; }
       { path = "/Applications/Mattermost.app"; }
+      { path = "/Applications/Obsidian.app"; }
       { path = "/Applications/Telegram.app"; }
       { path = "/Applications/Spotify.app"; }
       { path = "/System/Applications/Calendar.app"; }
