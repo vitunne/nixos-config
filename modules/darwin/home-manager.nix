@@ -41,6 +41,7 @@ let
       "Magnet" = 441258766;
       "Mattermost Desktop" = 1614666244;
       "v2RayTun" = 6476628951;
+      "Wipr 2" = 1662217862;
     };
   };
 
@@ -79,7 +80,7 @@ let
     enable   = true;
     username = user;
     entries = [
-      { path = "/Applications/Firefox.app"; }
+      { path = "/Applications/Safari.app"; }
       { path = "${pkgs.wezterm}/Applications/WezTerm.app"; }
       { path = "/Applications/Visual Studio Code.app"; }
       { path = "/Applications/Cursor.app"; }
