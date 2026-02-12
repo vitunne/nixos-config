@@ -18,6 +18,5 @@ _:
   "keepassxc"
   "spotify"
   "obsidian"
-  "raycast"
   "libreoffice"
 ]
