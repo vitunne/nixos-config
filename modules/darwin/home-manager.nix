@@ -80,9 +80,9 @@ let
     enable   = true;
     username = user;
     entries = [
+      { path = "/Applications/Apps.app"; }
       { path = "/Applications/Safari.app"; }
       { path = "${pkgs.wezterm}/Applications/WezTerm.app"; }
-      { path = "/Applications/Visual Studio Code.app"; }
       { path = "/Applications/Cursor.app"; }
       { path = "/Applications/Mattermost.app"; }
       { path = "/Applications/Obsidian.app"; }
