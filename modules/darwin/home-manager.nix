@@ -81,7 +81,7 @@ let
     username = user;
     entries = [
       { path = "/Applications/Apps.app"; }
-      { path = "/Applications/Safari.app"; }
+      { path = "/Applications/Google Chrome.app"; }
       { path = "${pkgs.wezterm}/Applications/WezTerm.app"; }
       { path = "/Applications/Cursor.app"; }
       { path = "/Applications/Mattermost.app"; }
