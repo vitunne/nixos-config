@@ -41,7 +41,6 @@ let
       "Magnet" = 441258766;
       "Mattermost Desktop" = 1614666244;
       "v2RayTun" = 6476628951;
-      "Wipr 2" = 1662217862;
     };
   };
 
