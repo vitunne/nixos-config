@@ -1,10 +1,12 @@
 _:
 
 [
+  # AI
+  "claude-code"
+
   # Development Tools
   "homebrew/cask/docker-desktop"
   "visual-studio-code"
-  "cursor"
   "beekeeper-studio"
   "insomnia"
 
