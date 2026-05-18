@@ -5,7 +5,7 @@ _:
   "claude-code"
 
   # Development Tools
-  "homebrew/cask/docker-desktop"
+  "orbstack"
   "visual-studio-code"
   "beekeeper-studio"
   "insomnia"
@@ -13,12 +13,10 @@ _:
   # Communication Tools
   "telegram"
 
-  # Browsers
-  "firefox"
-
   # other gui stuff
   "keepassxc"
   "spotify"
   "obsidian"
   "libreoffice"
+  "heroic"
 ]

@@ -55,6 +55,7 @@ let
         sessionPath = [
           "/opt/homebrew/bin"
           "/opt/homebrew/sbin"
+          "/Users/${user}/vk-cloud-solutions/bin"
         ];
       };
       programs = {
