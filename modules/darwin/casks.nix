@@ -19,4 +19,5 @@ _:
   "obsidian"
   "libreoffice"
   "heroic"
+  "plaud"
 ]
