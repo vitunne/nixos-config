@@ -40,12 +40,13 @@ let
       "AmneziaWG" = 6478942365;
       "Magnet" = 441258766;
       "Mattermost Desktop" = 1614666244;
-      "v2RayTun" = 6476628951;
+      "Happ" = 6746188973;
     };
   };
 
   # Enable home-manager
   home-manager = {
+    backupFileExtension = "backup";
     useGlobalPkgs = true;
     users.${user} = { pkgs, config, lib, ... }:{
       home = {
@@ -90,6 +91,7 @@ let
       { path = "/Applications/Spotify.app"; }
       { path = "/System/Applications/Calendar.app"; }
       { path = "/System/Applications/System Settings.app"; }
+      { path = "/Applications/Happ.app"; }
       {
         path = "${config.users.users.${user}.home}/Downloads";
         section = "others";
