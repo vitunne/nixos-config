@@ -37,7 +37,7 @@ let
     # you may receive an error message "Redownload Unavailable with This Apple ID".
     # This message is safe to ignore. (https://github.com/dustinlyons/nixos-config/issues/83)
     masApps = {
-      "AmneziaWG" = 6478942365;
+      # "AmneziaWG" = 6478942365;
       "Magnet" = 441258766;
       "Mattermost Desktop" = 1614666244;
       "Happ" = 6746188973;

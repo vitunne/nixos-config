@@ -8,7 +8,6 @@ shared-packages ++ [
   yq
   kubectl
   kubectx
-  kubernetes-helm
   dive
   minio-client
 ]
