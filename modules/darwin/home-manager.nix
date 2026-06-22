@@ -44,6 +44,13 @@ let
     };
   };
 
+  # `brew bundle` (used by the homebrew module) only installs missing mas apps,
+  # it never upgrades them, so upgrade them explicitly on each rebuild.
+  system.activationScripts.postActivation.text = ''
+    echo "Upgrading Mac App Store apps..." >&2
+    sudo -u ${user} ${pkgs.mas}/bin/mas upgrade || true
+  '';
+
   # Enable home-manager
   home-manager = {
     backupFileExtension = "backup";
