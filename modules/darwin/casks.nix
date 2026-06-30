@@ -5,6 +5,7 @@ _:
   "claude-code"
 
   # Development Tools
+  "freelens"
   "orbstack"
   "visual-studio-code"
   "beekeeper-studio"
