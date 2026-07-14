@@ -10,4 +10,6 @@ shared-packages ++ [
   kubectx
   dive
   minio-client
+  uv
+  vault
 ]
