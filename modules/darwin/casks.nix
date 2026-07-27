@@ -1,9 +1,6 @@
 _:
 
 [
-  # AI
-  "claude-code"
-
   # Development Tools
   "freelens"
   "orbstack"
