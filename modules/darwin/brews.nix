@@ -6,4 +6,5 @@ _:
   "ansible"
   "helm"
   "mas"
+  "hashicorp/tap/vault"
 ]

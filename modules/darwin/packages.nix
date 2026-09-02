@@ -11,5 +11,4 @@ shared-packages ++ [
   dive
   minio-client
   uv
-  vault
 ]

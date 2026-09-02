@@ -27,13 +27,17 @@
       url = "github:argoproj/homebrew-tap";
       flake = false;
     };
+    vault-homebrew-tap = {
+      url = "github:hashicorp/homebrew-tap";
+      flake = false;
+    };
     nixos-wsl = {
       url = "github:nix-community/nixos-wsl";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, argo-homebrew-tap, home-manager, nixpkgs, nixos-wsl } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, argo-homebrew-tap, vault-homebrew-tap, home-manager, nixpkgs, nixos-wsl } @inputs:
     let
       user = "nixos";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -96,6 +100,7 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                   "argoproj/homebrew-tap" = argo-homebrew-tap;
+                  "hashicorp/homebrew-tap" = vault-homebrew-tap;
                 };
                 mutableTaps = false;
                 autoMigrate = true;
