@@ -9,6 +9,6 @@ shared-packages ++ [
   kubectl
   kubectx
   dive
-  minio-client
+  rclone
   uv
 ]

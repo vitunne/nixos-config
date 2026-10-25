@@ -41,6 +41,7 @@ let
       "Magnet" = 441258766;
       "Mattermost Desktop" = 1614666244;
       "Happ" = 6746188973;
+      "Microsoft To Do" = 1274495053;
     };
   };
 

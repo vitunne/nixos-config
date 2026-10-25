@@ -8,6 +8,8 @@ _:
   "beekeeper-studio"
   "insomnia"
 
+  "tunnelblick"
+
   # Communication Tools
   "telegram"
 
@@ -18,4 +20,5 @@ _:
   "libreoffice"
   "heroic"
   "plaud"
+  "parsec"
 ]
