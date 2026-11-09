@@ -7,6 +7,7 @@ _:
   "visual-studio-code"
   "beekeeper-studio"
   "insomnia"
+  "codex"
 
   "tunnelblick"
 
