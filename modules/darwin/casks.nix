@@ -13,6 +13,7 @@ _:
 
   # Communication Tools
   "telegram"
+  "discord"
 
   # other gui stuff
   "keepassxc"
